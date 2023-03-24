@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+
+:root {
+	--h1-size: 128px;
+	--h2-size: 48px;
+	--h3-size: 24px;
+	--text-size: 20px;
+	--back-color: 0, 0, 0;
+	--addit-color: 174, 4, 4;
+	--other-color: 217, 217, 217;
+	--h1-font: 'ZCOOL KuaiLe', sans-serif;
+	--h1-letter-spacing: .07em;
+	--text-font: 'Kelly Slab', cursive;
+	--h2-letter-spacing: .16em;
+}
+
+* {
+	font-family: var(--text-font);
+	font-size: var(--text-size);
+	color: rgb(var(--other-color));
+}
+
+body {
+	background-color: rgb(var(--back-color));
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-family: var(--h1-font);
+	font-size: var(--h1-size);
+	letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+	font-size: var(--h2-size);
+	letter-spacing: var(--h2-letter-spacing);
+	color: rgb(var(--addit-color));
+}
+
+h3 {
+	font-size: var(--h3-size);
+}
+
+section {
+	min-height: 100vh;
+}
