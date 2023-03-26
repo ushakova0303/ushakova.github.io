@@ -1,0 +1,20 @@
+
+.who-are-we h2,h3,p{
+	margin-bottom: 26px;
+	width: 85vh;
+}
+
+.who-are-we{
+	margin-top: 200px;
+}
+
+.who-are-we::after{
+	content: "";
+	background: url("../source/img/who_are_we_screen.png") no-repeat;
+	width: 80vh;
+	height: 110vh;
+	display:block;
+	position: relative;
+	margin-left: 103.9vh;
+	top: -600px;
+}
