@@ -1,0 +1,22 @@
+
+.who-are-we__text h2,h3,p{
+	margin-bottom: 26px;
+	width: 40vw;
+}
+.who-are-we__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.who-are-we{
+/*	padding-top: 200px;*/
+	display: flex;
+	justify-content: space-between;
+}
+.who-are-we__samurai {
+	background: url("../source/img/who_are_we_screen.png") 50% 50% / 100% no-repeat;
+	width: 100%;
+	margin-left: 5vw;
+	/*height: 80vh;*/
+
+}
