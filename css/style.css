@@ -10,14 +10,92 @@
 	padding-top: 40vh;
 }
 
-.header-title__subtitle {
+.header__subtitle {
 	margin-top: 10px;
-	color: rgb(var(--other-color));
 }
 
 .container {
 	max-width: 1170px;
 	margin: auto;
+}
+
+.who-are-we{
+	display: flex;
+	justify-content: space-between;
+}
+
+.who-are-we__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 85vw;
+}
+
+.who-are-we__text > *{
+	margin-bottom: 26px;
+}
+
+.who-are-we__samurai {
+	background: url("../source/img/who_are_we_screen.png") 100% / 100% no-repeat;
+	width: 100%;
+	margin-left: 5vw;
+}
+
+.technic{
+	width: 60vw;
+	margin: 150px auto;
+}
+.technic__block-title{
+	width: 100%;
+	text-align: right;
+}
+.technic__img{
+	margin-left: 4vw;
+}
+.technic__title{
+	display: inline-block;
+	line-height: 150%;
+}
+
+.our-works{
+	position: relative;
+	margin: 150px auto;
+}
+
+.our-works__block-title{
+	text-align: center;
+}
+
+.our-works__title{
+	margin-bottom: 32px;
+}
+
+.our-works__examples-block{
+	margin-top:8%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.our-works__example{
+	width: 250px;
+	height: 450px;
+	background-color: rgba(var(--back-color), 0.5);
+}
+
+.our-works__example1{
+	width: 250px;
+}
+
+.our-works__gradient{
+	position:absolute;
+	top:-90px;
+	z-index: -1;
+	height: 140%;
+	width: 100%;
+	background: radial-gradient( at 100% 0%,
+	  rgba(var(--addit-color), 1) 20%,
+	  rgba(var(--back-color), 1) 65%);
+	filter: blur(180px);
 }
 
 .team {
@@ -40,4 +118,20 @@
 .team-slider__item a:hover {
 	background-color: #D3D3D3;
 	z-index: 10;
+}
+
+.afterword{
+	margin: 150px auto;
+	width: 840px;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 200px 200px;
+	grid-template-areas: "A A ." ". B B";
+}
+.afterword__text:nth-child(1){
+	grid-area: A;
+
+}
+.afterword__text:nth-child(2){
+	grid-area: B;
 }

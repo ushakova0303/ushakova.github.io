@@ -49,3 +49,7 @@ h3 {
 section {
 	min-height: 100vh;
 }
+
+.subtitle_other-color {
+	color: rgb(var(--other-color));
+}
