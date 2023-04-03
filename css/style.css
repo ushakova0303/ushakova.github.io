@@ -114,10 +114,39 @@
 	border-radius: 30px;
 }
 
+.team-slider__item {
+	position: relative;
+}
 
-.team-slider__item a:hover {
-	background-color: #D3D3D3;
-	z-index: 10;
+figcaption {
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	top: 72%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 243px;
+/*	 padding: 1em; */
+	background-color: rgba(var(--back-color), 0.7);
+	opacity: 0;
+	transition: opacity .7s;
+	border-radius: 0px 0px 30px 30px;
+}
+
+figcaption h3 {
+	padding-top: 10px;
+	font-size: 1rem;
+}
+
+figcaption p {
+	font-size: 1rem;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+figure:hover figcaption {
+	opacity: 1;
 }
 
 .afterword{
