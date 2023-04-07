@@ -16,10 +16,22 @@
 	--h2-letter-spacing: .16em;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
 	font-family: var(--text-font);
 	font-size: var(--text-size);
 	color: rgb(var(--other-color));
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow: hidden;
+	 overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
 body {
