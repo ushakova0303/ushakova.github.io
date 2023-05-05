@@ -96,6 +96,11 @@ h2 {
   text-align: right;
 }
 
+.profile-picture{
+  border-radius: 30px;
+  
+}
+
 /*nickname start*/
 
 .nickname {

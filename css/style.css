@@ -123,8 +123,9 @@
 .team-slider__img {
 	width: 243px;
 	height: 355px;
-	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+	filter: drop-shadow(4px 4px 4px rgba(var(--back-color), 0.25));
 	border-radius: 30px;
+	opacity: 0.8;
 }
 
 .team-slider__item {
