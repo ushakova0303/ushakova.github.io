@@ -4,10 +4,12 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		speed: 350,
 		responsive:[
-			// {
-			// 	breakpoint:
-			// 	settings: {}
-			// }
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			}
 		]
 	});
 });
@@ -18,6 +20,7 @@ const back_color_dark = '0, 0, 0',
 		back_color_light = '200, 200, 200',
 		addit_color_light = '50, 50, 174',
 		other_color_light = '27, 27, 27';
+
 function changeTheme(){
 	if(isDark){
 		document.body.style.setProperty('--back-color', back_color_light);
@@ -37,4 +40,9 @@ function changeTheme(){
 		localStorage.setItem('addit_color', addit_color_dark);
 		localStorage.setItem('other_color', other_color_dark);
 	}
+}
+
+
+function showError() {
+	confirm("Похоже, произошла ошибка. Скоро починим.")
 }
